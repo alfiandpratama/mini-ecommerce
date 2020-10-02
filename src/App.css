@@ -1,38 +1,179 @@
-.App {
-  text-align: center;
+.app {
+  width: 100%;
+  max-width: 46rem;
+  margin: 0 auto;
+  background-color: #eeeeee;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box {
+  margin: 2rem;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.box img {
+  width: 100%;
+  max-width: 15rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box__desc {
+  padding-left: 2rem;
+}
+
+.homepage {
+  position: relative;
+}
+
+.detail {
+  margin-bottom: 5rem;
+  padding: 3rem;
+
   display: flex;
   flex-direction: column;
+}
+
+.detail__image {
+  width: 100%;
+  position: relative;
+}
+
+.detail__image img {
+  width: 100%;
+  height: 20rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.detail__image .icon-back {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.detail__image .icon-share {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.detail__title .icon-heart {
+  font-size: 3rem;
+  color: crimson;
+}
+
+.detail__title {
+  margin: 1rem 0;
+
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.detail__action {
+  width: 100%;
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.detail__action p {
+  margin-right: 2rem;
+}
+
+.btn {
+  display: block;
+  width: 7rem;
+  padding: 1rem;
+  text-transform: uppercase;
   color: white;
+  background-color: #37af65;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+form {
+  width: 100%;
+  padding: 4rem;
+  border-radius: 0.25rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-control {
+  display: block;
+  width: 100%;
+  height: 4rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem 1.25rem;
+  color: #495075;
+  background-color: white;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  transition: all 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.35rem rgba(0, 123, 255, 0.25);
+}
+
+.input-checkbox {
+  display: inline-block;
+  margin-right: 1rem;
+  min-height: 2rem;
+  min-width: 2rem;
+}
+
+.login {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signin {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sosmed-login button {
+  width: 100%;
+  display: block;
+  margin: 1rem 0;
+  padding: 1rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: #37af65;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.sosmed-login .btn-facebook {
+  width: 100%;
+  display: block;
+  padding: 1rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: #0f90f3;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.sosmed-login .btn-google {
+  width: 100%;
+  display: block;
+  padding: 1rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: #1a73e8;
+  border-radius: 2px;
+  cursor: pointer;
 }

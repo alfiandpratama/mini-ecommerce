@@ -1,0 +1,32 @@
+.header {
+  background-color: #00C85C;
+  padding: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__icon {
+  padding: 0 .5rem;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+} 
+
+.header__search-box {
+  flex: 1;
+  /* background-color: white;
+  padding: .5rem 1rem;
+  border: 1px solid rgb(177, 172, 172);
+  border-radius: .5rem; */
+}
+
+.header__search-box input{
+  margin: 0;
+}
+
+.header__title {
+  flex: 1;
+  color: white
+}

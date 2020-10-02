@@ -1,0 +1,27 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product__box {
+  position: relative;
+  margin: 2rem;
+  border-radius: 3px;
+}
+
+.product__image {
+  /* border: 1px solid rgb(233, 188, 188); */
+  width: 100%;
+  max-height: 20rem;
+  border-radius: .5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.product__icon {
+  position: absolute;
+  left: .7rem;
+  bottom: 2.5rem;
+  color: crimson;
+}
